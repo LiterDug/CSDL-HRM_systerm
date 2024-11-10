@@ -120,25 +120,25 @@
                                 <a href="all_personnel.php">Personnel</a>
                             </li>
                             <li>
-                                <a href="position_table.php">Designation</a>
+                                <a href="position_table.php">Position</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="gass_rank_table.php">GASS Position</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="rank_table.php">Academic Rank</a>
                             </li>
                             <li>
                                 <a href="department_table.php">Department</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="file_table.php">
                                     Files
                                 </a>
-                            </li>
+                            </li> -->
                         </ul> 
                     </li>                   
-                    <li>
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             
                             <i class="glyphicon glyphicon-education"></i>&nbsp;&nbsp;Campuses
@@ -160,7 +160,7 @@
                                 <a href="binalbagan_campus.php">BINALBAGAN</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             

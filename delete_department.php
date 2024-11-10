@@ -6,3 +6,13 @@ $id = $_GET['dept_id'];
 	$delete->execute();
 	header('location:department_table.php');
 ?>
+
+
+
+
+
+
+
+
+
+

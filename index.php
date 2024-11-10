@@ -48,6 +48,8 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id']))
 						<label for = "password">Password</label>
 						<input class = "form-control" name = "admin_pass" placeholder = "Password" type = "password" required = "required" >
 					</div>
+
+					<!-- Login button -->
 					<div class = "form-group">
 						<button class = "btn btn-block btn-success" name = "login"><span class = "glyphicon glyphicon-log-in"></span> Login</button>
 					</div>
