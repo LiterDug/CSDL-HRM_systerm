@@ -37,7 +37,7 @@ include("header.php");
                                         <td>Birthdate</td>
                                         <td>Birthplace</td>
                                         <td>Contact Number</td>
-                                        <td>Date of Original Appointment</td>
+                                        <!-- <td>Date of Original Appointment</td>
                                         <td>Bachelor's Degree</td>
                                         <td>Master's Degree</td>
                                         <td>Doctorate Degree</td>
@@ -46,9 +46,9 @@ include("header.php");
                                         <td>Eligibility</td>
                                         <td>Plantilla Number</td>
                                         <td>Employee Status</td>
-                                        <td>Tin Number</td>
-                                        <td>Pag-ibig Number</td>
-                                        <td>GSIS Number</td>
+                                        <td>Tin Number</td> -->
+                                        <td>Salary</td>
+                                        <td>Working time per month</td>
                                         <td>Campus</td>
                                         <td>Action</td>
                                     </tr>
@@ -90,7 +90,7 @@ include("header.php");
                                   <td><?php echo $row['per_date_of_birth']; ?></td>
                                   <td><?php echo $row['per_place_of_birth']; ?></td>
                                   <td><?php echo $row['per_contact_no']; ?></td>
-                                  <td><?php echo $row['per_date_of_original_appointment']; ?></td>
+                                  <!-- <td><?php echo $row['per_date_of_original_appointment']; ?></td>
                                   <td><?php echo $row['bs_name']; ?></td>
                                   <td><?php echo $row['ms_name']; ?></td>
                                   <td><?php echo $row['dr_name']; ?></td>
@@ -99,7 +99,7 @@ include("header.php");
                                   <td><?php echo $row['per_eligibility']; ?></td>
                                   <td><?php echo $row['per_plantilla_no']; ?></td>
                                   <td><?php echo $row['per_designation']; ?></td>
-                                  <td><?php echo $row['per_tin_no']; ?></td>
+                                  <td><?php echo $row['per_tin_no']; ?></td> -->
                                   <td><?php echo $row['per_pagibig_no']; ?></td>
                                   <td><?php echo $row['per_gsis_bp_no']; ?></td>
                                   <td><?php echo $row['per_campus'];?></td>

@@ -53,40 +53,39 @@ foreach ($fetch as $key => $row) {
                                 <h4>PERSONNEL INFORMATION</h4>
                             </div>
                         </div>
-                        <div class="body">
+                        <div class="body"> 
                         <div  class="container-fluid" style="background-color: #ddd;">
                             <div class="demo-masked-input">
                                 <div class="row clearfix">
                                     <div class="col-md-12">
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 FirstName:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_firstname" placeholder="First Name" value="<?php echo $row['per_firstname']; ?> " >
-                                                <input type="hidden" class="form-control" name="per_id" placeholder="First Name" value="<?php echo $row['per_id']; ?>">
+                                                <input type="text" class="form-control" name="per_firstname" placeholder="First Name">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                     <!-- <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 MiddleName:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_middlename" placeholder="Middle Name" value="<?php echo $row['per_middlename']; ?>">
+                                                <input type="text" class="form-control" name="per_middlename" placeholder="Middle Name">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 LastName:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_lastname" placeholder="Last Name" value="<?php echo $row['per_lastname']; ?>">
+                                                <input type="text" class="form-control" name="per_lastname" placeholder="Last Name">
                                             </div>
                                         </div>
                                     </div>
@@ -96,35 +95,37 @@ foreach ($fetch as $key => $row) {
                                                 Suffix:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_suffix" placeholder="Sr/Jr" value="<?php echo $row['per_suffix']; ?>">
+                                                <input type="text" class="form-control" name="per_suffix" placeholder="jr/sr">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Sex:
                                             </span>
-                                            <select class="form-control show-tick" name="per_gender" value="<?php echo $row4['per_gender']; ?>" >
-                                                <option><?php echo $row['per_gender']; ?></option>
-                                                <option>Male</option>
-                                                <option>Female</option>
-                                            </select>
+                                                <select class="form-control show-tick" name="per_gender">
+                                                    <option></option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                </select>
                                         </div>
+
                                     </div>
-                                    <div class="col-md-3">
+                                      <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Status:
                                             </span>
-                                            <select class="form-control show-tick" name="per_status">
-                                                <option><?php echo $row['per_status']; ?></option>
-                                                <option>Single</option>
-                                                <option>Married</option>
-                                                <option>Widowed</option>
-                                                <option>Separated</option>
-                                            </select>
+                                                <select class="form-control show-tick" name="per_status">
+                                                    <option></option>
+                                                    <option>Single</option>
+                                                    <option>Married</option>
+                                                    <option>Widowed</option>
+                                                    <option>Separated</option>
+                                                </select>
                                         </div>
+                                        
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-group">
@@ -132,7 +133,7 @@ foreach ($fetch as $key => $row) {
                                                 Address:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_address" placeholder="Other Name" value="<?php echo $row['per_address']; ?>" >
+                                                <input type="text" class="form-control" name="per_address" placeholder="Adrress">
                                             </div>
                                         </div>
                                     </div>
@@ -142,37 +143,37 @@ foreach ($fetch as $key => $row) {
                                                 Place of Birth:
                                             </span>
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" name="per_place_of_birth" value="<?php echo $row['per_place_of_birth']; ?>">
+                                                    <input type="text" class="form-control" name="per_place_of_birth" placeholder="Place of Birth">
                                                 </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="input-group">
+                                    <div class="input-group">
                                             <span class="input-group-addon">
                                                 Date of Birth:
                                             </span>
-                                                <div class="form-line">
-                                                    <input type="Date" class="form-control" name="per_date_of_birth" value="<?php echo $row['per_date_of_birth']; ?>">
-                                                </div>
+                                            <div class="form-line">
+                                                <input type="date" class="form-control" name="per_date_of_birth" placeholder="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    
+                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                Designation:
+                                                Position:
                                             </span>
-                                                <select class="form-control show-tick" name="pos_name">
-                                                    <option value="<?php echo $row['pos_id'] ?>"><?php echo $row['pos_name']; ?></option>
+                                                <select class="form-control show-tick" name="per_position"> 
+                                                <option></option>
                                                 <?php
                                                 include("connect.php"); 
-                                               
-                                                $gass1 = $con->prepare("SELECT * FROM tbl_position ORDER BY pos_id ");
-                                                $gass1->execute();
-                                                while($row9 = $gass1->fetch()) {
-                                                ?>                  
-
-                                                    <option value="<?php echo $row9['pos_id']; ?>"><?php echo $row9['pos_name']; ?></option>
-                                                <?php }  ?>
+                                                $pos1 = $con->prepare("SELECT * FROM tbl_position ORDER BY pos_id");
+                                                $pos1->execute();
+                                                while($row1 = $pos1->fetch()) {
+                                                        $pos_name = $row1['pos_name'];
+                                                ?>
+                                                    <option value="<?php echo $row1['pos_id']; ?>"><?php echo $row1['pos_name']; ?></option>
+                                                <?php } ?>
                                                 </select>
                                         </div>
                                     </div>
@@ -181,57 +182,35 @@ foreach ($fetch as $key => $row) {
                                             <span class="input-group-addon">
                                                 Department:
                                             </span>
-                                                <select class="form-control show-tick" name="dept_name">
-                                                <option value="<?php echo $row['dept_id']; ?> "><?php echo $dept_name; ?></option>
+                                                <select class="form-control show-tick" name="dept_id"> 
+                                                <option></option>
                                                 <?php
                                                 include("connect.php"); 
-                                               
                                                 $department = $con->prepare("SELECT * FROM tbl_department ORDER BY dept_id");
                                                 $department->execute();
-                                                while($row4 = $department->fetch()) {
-                                                ?>                  
-
-                                                    <option value="<?php echo $row4['dept_id']; ?>"><?php echo $row4['dept_name']; ?></option>
-                                                <?php }  ?>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <span class="input-group-addon ">
-                                                Academic Rank:
-                                            </span>
-                                                <select class="form-control show-tick " name="rank" >
-                                                <option value="<?php echo $row['rank_id']; ?> "><?php echo $rank_name; ?></option>
-                                                <?php
-                                                include("connect.php"); 
-                                               
-                                                $rank = $con->prepare("SELECT * FROM tbl_academic_rank ORDER BY rank_id");
-                                                $rank->execute();
-                                                while($row20 = $rank->fetch()) {
-                                                ?>                  
-
-                                                    <option value="<?php echo $row20['rank_id']; ?>"><?php echo $row20['rank_name']; ?></option>
-                                                <?php }  ?>
+                                                while($row1 = $department->fetch()) {
+                                                        $dept_name = $row1['dept_name'];
+                                                ?>
+                                                    <option value="<?php echo $row1['dept_id']; ?>"><?php echo $row1['dept_name']; ?></option>
+                                                <?php } ?>
                                                 </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                GASS Position:
+                                                Academic Rank:
                                             </span>
-                                                <select class="form-control show-tick " name="gass_name">
-                                                <option value="<?php echo $row['gass_id'] ?>"><?php echo $row['gass_name']; ?></option>
-                                                
+                                                <select class="form-control show-tick" name="rank_name">
+                                                <option></option>
                                                      <?php
                                                 include("connect.php"); 
-                                                $faculty_rank = $con->prepare("SELECT * FROM tbl_gass_rank ORDER BY gass_id");
+                                                $faculty_rank = $con->prepare("SELECT * FROM tbl_academic_rank ORDER BY rank_id");
                                                 $faculty_rank ->execute();
                                                 while($row102 = $faculty_rank->fetch()) {
-                                                        $rank_name = $row102['gass_name'];
+                                                        $rank_name = $row102['rank_name'];
                                                 ?>
-                                                    <option value="<?php echo $row102['gass_id']; ?>"><?php echo $row102['gass_name']; ?></option>
+                                                    <option value="<?php echo $row102['rank_id']; ?>"><?php echo $row102['rank_name']; ?></option>
                                                 <?php } ?>
                                                 </select>                   
                                         </div>
@@ -239,24 +218,44 @@ foreach ($fetch as $key => $row) {
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                Employee Status:
+                                                GASS Rank:
                                             </span>
-                                                <select class="form-control show-tick main" id = "privileges" name="per_designation" value="<?php echo $row['per_designation'];?>">
-                                                    <option><?php echo $per_designation; ?></option>
-                                                    <option value='Permanent'>Permanent</option>
-                                                    <option value='GASS'>GASS</option>
-                                                    <option value='Part Time'>Part Time</option>
-                                                    <option value='Job Order'>Job Order</option>
-                                                </select>
+                                                <select class="form-control show-tick" name="gass_name">
+                                                <option></option>
+                                                     <?php
+                                                include("connect.php"); 
+                                                $faculty1_rank = $con->prepare("SELECT * FROM tbl_gass_rank ORDER BY gass_id");
+                                                $faculty1_rank ->execute();
+                                                while($row101 = $faculty1_rank->fetch()) {
+                                                        $gass_name = $row101['gass_name'];
+                                                ?>
+                                                    <option value="<?php echo $row101['gass_id']; ?>"><?php echo $row101['gass_name']; ?></option>
+                                                <?php } ?>
+                                                </select>                   
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <!-- <div class="col-md-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Employee Status:
+                                            </span>
+                                                <select class="form-control show-tick main" id = "privileges" name="per_designation">
+                                                    <option></option>
+                                                    <option value='Permanent'>Permanent</option>
+                                                    <option value='GASS'>GASS</option>
+                                                    <option value='Part-Time'>Part Time</option>
+                                                    <option value='Job-Order'>Job Order</option>
+                                                </select>
+                                        </div>
+                                    </div> -->
+                                    
+                                    <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Campus:
                                             </span>
-                                                <select class="form-control show-tick" name="per_campus" value="<?php echo $row['per_campus']; ?>">
-                                                    <option><?php echo $per_campus; ?></option>
+                                                <select class="form-control show-tick" name="per_campus">
+                                                    <option></option>
                                                     <option>Talisay</option>
                                                     <option>Fortune Towne</option>
                                                     <option>Alijis</option>
@@ -264,43 +263,44 @@ foreach ($fetch as $key => $row) {
                                                 </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
+                                    <!-- <div class="col-md-5">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                             Date of Appointment:
                                             </span>
                                                 <div id="sandbox-container" class="form-line">
-                                                    <input type="Date" class="form-control" name="per_date_of_original_appointment" value="<?php echo $per_date_of_original_appointment; ?>">
+                                                    <input type="Date" class="form-control" name="per_date_of_original_appointment">
                                                 </div>
                                         </div>
-                                    </div>
-                                     <div class="col-md-4">                                    
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                    Plantilla Number
-                                            </span>
-                                                <div class="form-line">
-                                                    <input type="text" class="form-control " name="per_plantilla_no" value="<?php echo $per_plantilla_no; ?>" >
-                                                </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-4">                                    
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                     Mobile No.:
                                             </span>
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" name="per_contact_no" id="contact_no" maxlength="22" value="<?php echo $per_contact_no; ?>">
+                                                    <input type="text" class="form-control" name="per_contact_no" id="contact_no" maxlength="22">
                                                 </div>
                                         </div>
                                     </div>
+                                     <!-- <div class="col-md-4">                                    
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                    Plantilla Number
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control " name="per_plantilla_no" >
+                                                </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Eligibility:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="per_eligibility" value="<?php echo $per_eligibility; ?>">
+                                                <input type="text" class="form-control" name="per_eligibility" placeholder="Eligibility">
                                             </div>
                                         </div>
                                     </div>
@@ -311,31 +311,31 @@ foreach ($fetch as $key => $row) {
                                                 TIN No.:
                                             </span>
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control key" name="per_tin_no" id="tin" value="<?php echo $per_tin_no; ?>" id = "tin">
+                                                    <input type="text" class="form-control key" name="per_tin_no" id="tin" placeholder="Ex: XXX-XXX-XXX" id = "tin">
+                                                </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                Working time per month:
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control key" name="per_gsis_bp_no" id="gsis" placeholder="Ex: XXX-XXX-XXX">
                                                 </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                GSIS BP No.:
+                                                Salary:
                                             </span>
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control key" name="per_gsis_bp_no" id="gsis" value="<?php echo $per_gsis_bp_no; ?>">
+                                                    <input type="text" class="form-control" name="per_pagibig_no" id="pagibig" maxlength="22" placeholder="e.g. XXX-XXX-XXX">
                                                 </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                PAG-IBIG No.:
-                                            </span>
-                                                <div class="form-line">
-                                                    <input type="text" class="form-control" name="per_pagibig_no" id="pagibig" maxlength="22" value="<?php echo $per_pagibig_no; ?>">
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <h3 class="page-header">Educational Attainment</h3> 
                                     </div>                
                                     <div class="col-md-6">
@@ -344,7 +344,7 @@ foreach ($fetch as $key => $row) {
                                                 Bachelor's Degree:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="bs_name" value="<?php echo $bs_name; ?>">
+                                                <input type="text" class="form-control" name="bs_name" placeholder="Degree">
                                             </div>
                                         </div>
                                     </div>
@@ -354,7 +354,7 @@ foreach ($fetch as $key => $row) {
                                                 Year:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="bs_year" value="<?php echo $bs_year; ?>">
+                                                <input type="text" class="form-control" name="bs_year" placeholder="YYYY">
                                             </div>
                                         </div>
                                     </div>
@@ -364,7 +364,7 @@ foreach ($fetch as $key => $row) {
                                                 School:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="bs_school" value="<?php echo $bs_school; ?>">
+                                                <input type="text" class="form-control" name="bs_school" placeholder="School">
                                             </div>
                                         </div>
                                     </div>
@@ -374,7 +374,7 @@ foreach ($fetch as $key => $row) {
                                                 Master's Degree:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="ms_name" value="<?php echo $ms_name; ?>">
+                                                <input type="text" class="form-control" name="ms_name" placeholder=" Degree">
                                             </div>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@ foreach ($fetch as $key => $row) {
                                                 with:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="ms_with_unit" value="<?php echo $ms_with_unit; ?>">
+                                                <input type="text" class="form-control" name="ms_with_unit" placeholder="with_Units">
                                             </div>
                                         </div>
                                     </div>
@@ -394,7 +394,7 @@ foreach ($fetch as $key => $row) {
                                                 Year:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="ms_year" value="<?php echo $ms_year; ?>">
+                                                <input type="text" class="form-control" name="ms_year" placeholder="YYYY">
                                             </div>
                                         </div>
                                     </div>
@@ -404,7 +404,7 @@ foreach ($fetch as $key => $row) {
                                                 School:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="ms_school" value="<?php echo $ms_school; ?>">
+                                                <input type="text" class="form-control" name="ms_school" placeholder="School">
                                             </div>
                                         </div>
                                     </div>
@@ -414,7 +414,7 @@ foreach ($fetch as $key => $row) {
                                                 Doctorate Degree:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="dr_name" value="<?php echo $dr_name; ?>">
+                                                <input type="text" class="form-control" name="dr_name" placeholder="Degree">
                                             </div>
                                         </div>
                                     </div>
@@ -424,7 +424,7 @@ foreach ($fetch as $key => $row) {
                                                 with:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="dr_with_unit" value="<?php echo $dr_with_unit; ?>">
+                                                <input type="text" class="form-control" name="dr_with_unit" placeholder="with Units">
                                             </div>
                                         </div>
                                     </div>
@@ -434,7 +434,7 @@ foreach ($fetch as $key => $row) {
                                                 Year:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="dr_year" value="<?php echo $dr_year; ?>">
+                                                <input type="text" class="form-control" name="dr_year" placeholder="YYYY">
                                             </div>
                                         </div>
                                     </div>
@@ -444,7 +444,7 @@ foreach ($fetch as $key => $row) {
                                                 School:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="dr_school" value="<?php echo $dr_school; ?>">
+                                                <input type="text" class="form-control" name="dr_school" placeholder="School">
                                             </div>
                                         </div>
                                     </div>
@@ -454,7 +454,7 @@ foreach ($fetch as $key => $row) {
                                                 Other Degree:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="other_degree" value="<?php echo $other_degree; ?>">
+                                                <input type="text" class="form-control" name="other_degree" placeholder="Other Degree">
                                             </div>
                                         </div>
                                     </div>  
@@ -464,7 +464,7 @@ foreach ($fetch as $key => $row) {
                                                 Year:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="other_year" value="<?php echo $other_year; ?>">
+                                                <input type="text" class="form-control" name="other_year" placeholder="YYYY">
                                             </div>
                                         </div>
                                     </div>
@@ -474,12 +474,12 @@ foreach ($fetch as $key => $row) {
                                                 School:
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="other_school" value="<?php echo $other_school; ?>">
+                                                <input type="text" class="form-control" name="other_school" placeholder="School">
                                             </div>
                                         </div>
-                                    </div>                             
+                                    </div>                              -->
                                 </div>  
-                                    <input type="submit" name="update" value="SAVE" class="btn btn-success" style ="float:right; margin-top: -30px;">                   
+                                    <input type="submit" name="save" value="SAVE" class="btn btn-success" style ="float:right; margin-top: -30px;">                   
                                 </div>
                             </div>
                         </div>

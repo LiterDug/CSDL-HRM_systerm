@@ -13,7 +13,7 @@
                                 <h4>PERSONNEL INFORMATION</h4>
                             </div>
                         </div>
-                        <div class="body">
+                        <div class="body"> 
                         <div  class="container-fluid" style="background-color: #ddd;">
                             <div class="demo-masked-input">
                                 <div class="row clearfix">
@@ -29,7 +29,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                     <div class="col-md-3">
+                                     <!-- <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 MiddleName:
@@ -58,7 +58,7 @@
                                                 <input type="text" class="form-control" name="per_suffix" placeholder="jr/sr">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-3">
                                         <div class="input-group">
                                             <span class="input-group-addon">
@@ -121,7 +121,7 @@
                                      <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                Designation:
+                                                Position:
                                             </span>
                                                 <select class="form-control show-tick" name="per_position"> 
                                                 <option></option>
@@ -194,7 +194,7 @@
                                                 </select>                   
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <!-- <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Employee Status:
@@ -207,7 +207,7 @@
                                                     <option value='Job-Order'>Job Order</option>
                                                 </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     
                                     <div class="col-md-4">
                                         <div class="input-group">
@@ -223,7 +223,7 @@
                                                 </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
+                                    <!-- <div class="col-md-5">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                             Date of Appointment:
@@ -232,7 +232,7 @@
                                                     <input type="Date" class="form-control" name="per_date_of_original_appointment">
                                                 </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-4">                                    
                                         <div class="input-group">
                                             <span class="input-group-addon">
@@ -243,7 +243,7 @@
                                                 </div>
                                         </div>
                                     </div>
-                                     <div class="col-md-4">                                    
+                                     <!-- <div class="col-md-4">                                    
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                     Plantilla Number
@@ -274,11 +274,11 @@
                                                     <input type="text" class="form-control key" name="per_tin_no" id="tin" placeholder="Ex: XXX-XXX-XXX" id = "tin">
                                                 </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                GSIS BP No.:
+                                                Working time per month:
                                             </span>
                                                 <div class="form-line">
                                                     <input type="text" class="form-control key" name="per_gsis_bp_no" id="gsis" placeholder="Ex: XXX-XXX-XXX">
@@ -288,14 +288,14 @@
                                     <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                PAG-IBIG No.:
+                                                Salary:
                                             </span>
                                                 <div class="form-line">
                                                     <input type="text" class="form-control" name="per_pagibig_no" id="pagibig" maxlength="22" placeholder="e.g. XXX-XXX-XXX">
                                                 </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <h3 class="page-header">Educational Attainment</h3> 
                                     </div>                
                                     <div class="col-md-6">
@@ -437,7 +437,7 @@
                                                 <input type="text" class="form-control" name="other_school" placeholder="School">
                                             </div>
                                         </div>
-                                    </div>                             
+                                    </div>                              -->
                                 </div>  
                                     <input type="submit" name="save" value="SAVE" class="btn btn-success" style ="float:right; margin-top: -30px;">                   
                                 </div>
