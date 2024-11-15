@@ -7,14 +7,14 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id']))
 <!DOCTYPE html>
 <html lang = "eng">
 	<head>
-		<!-- <title>SSCT PERSONNEL PROFILE</title>
+		<title>SSCT PERSONNEL PROFILE</title>
 		<meta charset = "utf-8" />
 		<link rel = "shortcut icon" href = "">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel = "stylesheet" href = "css/bootstrap.css">
 		<link rel = "stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/login.css">
-		<style type="text/css"> -->
+		<style type="text/css">
 			#sidelogin{
 				width:25%;
 				float:right;
