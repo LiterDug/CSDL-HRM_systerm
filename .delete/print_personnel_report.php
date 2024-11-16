@@ -85,7 +85,7 @@
 			<br>
 			Last Name		
 			</td>
-			<td><label><?php echo $row['per_firstname']; ?></label>
+			<td><label><?php echo $row['per_name']; ?></label>
 			<br>
 			First Name
 			</td>

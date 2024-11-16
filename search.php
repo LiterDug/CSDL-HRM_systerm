@@ -7,9 +7,9 @@ $searchTerm = $_GET['term'];
 // while ($row = $query->fetch_assoc()) {
 //     $data[] = $row['skill'];
 // }
-$query  = $con->prepare("SELECT * FROM tbl_personnel WHERE per_firstname LIKE '%".$searchTerm."%' ORDER BY per_id ASC");
+$query  = $con->prepare("SELECT * FROM tbl_personnel WHERE per_name LIKE '%".$searchTerm."%' ORDER BY per_id ASC");
 while($row = $query->fetch()){
-	$data[] = $row['per_firstname'];
+	$data[] = $row['per_name'];
 }
 //return json data
 echo json_encode($data);

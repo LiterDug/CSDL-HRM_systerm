@@ -40,7 +40,7 @@
                                     $difference = $date->diff($now)->format('%y Year(s) ,%m month(s)');
                                     ?>
 
-                                        <td><?php echo $row['per_lastname'] .", ". $row['per_firstname'] ." " .$row['per_middlename'] . " " .$row['per_suffix']  ?></td>
+                                        <td><?php echo $row['per_lastname'] .", ". $row['per_name'] ." " .$row['per_middlename'] . " " .$row['per_suffix']  ?></td>
                                         <td><?php echo $row['per_date_of_original_appointment']; ?></td>
                                         <td><b>
                                         <?php 

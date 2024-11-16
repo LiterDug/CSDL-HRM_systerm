@@ -87,7 +87,7 @@
                                         if ($difference >= 65) {
                                         ?>
                                     <tr>
-                                        <td><?php echo $row['per_firstname'];?></td>
+                                        <td><?php echo $row['per_name'];?></td>
                                         <td><?php echo $row['gass_name']." ".$row['rank_name'];?></td>
                                         <td><?php echo $difference; ?></td>
                                         <td><?php echo $row['per_date_of_birth']; ?></td>
@@ -97,7 +97,7 @@
                                     </tr>                               
                                 <?php } elseif ($difference >= 60) { ?>
                                     <tr>
-                                        <td><?php echo $row['per_firstname'];?></td>
+                                        <td><?php echo $row['per_name'];?></td>
                                         <td><?php echo $row['gass_name']." ".$row['rank_name'];?></td>
                                         <td><?php echo $difference; ?></td>
                                         <td><?php echo $row['per_date_of_birth']; ?></td>

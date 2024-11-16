@@ -38,7 +38,7 @@ foreach ($fetch as $key => $row) {
                 Name:
                 </span>
                 <div class="form-line">
-                    <input class="form-control" name="per_name" value="<?php echo $row['per_lastname']." ".$row['per_firstname']." ".$row['per_suffix']; ?>" readOnly>
+                    <input class="form-control" name="per_name" value="<?php echo $row['per_lastname']." ".$row['per_name']." ".$row['per_suffix']; ?>" readOnly>
                 </div>
             </div>
 			<div class="input-group">

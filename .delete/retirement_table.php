@@ -53,7 +53,7 @@ include("header.php");
                                         if ($difference >= 65) {
                                         ?>
                                     <tr>
-                                        <td><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_middlename'];?></td>
+                                        <td><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_middlename'];?></td>
                                         <td><?php echo $row['gass_name']." ".$row['rank_name'];?></td>
                                         <td><?php echo $difference; ?></td>
                                         <td><?php echo $row['per_date_of_birth']; ?></td>
@@ -63,7 +63,7 @@ include("header.php");
                                     </tr>                               
                                 <?php } elseif ($difference >= 60) { ?>
                                     <tr>
-                                        <td><?php echo $row['per_firstname'];?></td>
+                                        <td><?php echo $row['per_name'];?></td>
                                         <td><?php echo $row['gass_name']." ".$row['rank_name'];?></td>
                                         <td><?php echo $difference; ?></td>
                                         <td><?php echo $row['per_date_of_birth']; ?></td>

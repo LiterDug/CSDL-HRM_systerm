@@ -18,10 +18,10 @@
                                         $personnel->execute();
                                         while($row = $personnel->fetch()) {
                                             $per_id = $row['per_id'];
-                                            $per_firstname = $row['per_firstname'];
+                                            $per_name = $row['per_name'];
                                             $per_lastname = $row['per_lastname'];
                                     ?>
-                                    <option value="<?php echo $per_id ?>"><?php echo $per_firstname." ".$per_lastname; ?></option>
+                                    <option value="<?php echo $per_id ?>"><?php echo $per_name." ".$per_lastname; ?></option>
                                      
                                     <?php } ?>
                                     </select>

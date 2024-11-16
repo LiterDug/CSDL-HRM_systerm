@@ -234,12 +234,12 @@
                     if ($gender == 'Male') { ?>
                     
                         <span>Age: <?php echo $difference; ?></span><br>
-                        <span">Name: Mr. <?php echo $row['per_firstname']. " " . $row['per_middlename']. ". " . $row['per_lastname']; ?></span><br>
+                        <span">Name: Mr. <?php echo $row['per_name']. " " . $row['per_middlename']. ". " . $row['per_lastname']; ?></span><br>
                         <span>Contact No.: <?php echo $row['per_contact_no']; ?></span><br>
                         <span>Campus: <?php echo $row['per_campus']; ?></span><br><br>
                    <?php } else { ?>
                         <span>Age: <?php echo $difference; ?></span><br>
-                        <span>Name: Ms/Mrs. <?php echo $row['per_firstname']. " " . $row['per_middlename']. ". " . $row['per_lastname']; ?></span><br>
+                        <span>Name: Ms/Mrs. <?php echo $row['per_name']. " " . $row['per_middlename']. ". " . $row['per_lastname']; ?></span><br>
                         <span>Contact No.: <?php echo $row['per_contact_no']; ?></span><br>
                         <span>Campus: <?php echo $row['per_campus']; ?></span><br>
                   <?php  }
@@ -253,7 +253,6 @@
     </section>
 
             <?php include("add_position_modal.php"); ?>
-            <?php include("add_rank_modal.php"); ?>
             <?php include("add_department_modal.php"); ?>
 
 

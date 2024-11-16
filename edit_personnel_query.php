@@ -1,34 +1,28 @@
 <?php
-include('connect.php');
-if(isset($_POST['update'])) {
-    $per_id = $_POST['per_id'];
+include("connect.php");
+
+if (isset($_POST['save'])) {
+    $per_id = $_GET['per_id'];
     $per_name = $_POST['per_name'];
-    $pos_id = $_POST['pos_name'];
     $per_gender = $_POST['per_gender'];
     $per_address = $_POST['per_address'];
     $per_date_of_birth = $_POST['per_date_of_birth'];
-    $dept_id = $_POST['dept_name'];
-    $per_contact = $_POST['per_contact_no'];
+    $per_position = $_POST['per_position'];
+    $dept_id = $_POST['dept_id'];
     $per_designation = $_POST['per_designation'];
-    $hire_date = $_POST['hire_date'];
+    $per_contact_no = $_POST['per_contact_no'];
     $bank_name = $_POST['bank_name'];
     $bank_account = $_POST['bank_account'];
+    $hire_date = $_POST['hire_date'];
 
-    // Prepare and execute the SQL statement
-    $add_personnel = $con->prepare("
-        UPDATE tbl_personnel
-        SET per_name = ?, per_address = ?, pos_id = ?, per_designation = ?, 
-            per_date_of_birth = ?, per_gender = ?, per_contact_no = ?, 
-            dept_id = ?, hire_date = ?, bank_name = ?, bank_account = ?
-        WHERE per_id = ?
-    ");
+    $query = $con->prepare("UPDATE tbl_personnel SET 
+        per_name = ?, per_gender = ?, per_address = ?, per_date_of_birth = ?, 
+        pos_id = ?, dept_id = ?, per_designation = ?, per_contact_no = ?, 
+        bank_name = ?, bank_account = ?, hire_date = ?, date_modified = NOW() 
+        WHERE per_id = ?");
+    $query->execute([$per_name, $per_gender, $per_address, $per_date_of_birth, $per_position, $dept_id, 
+                     $per_designation, $per_contact_no, $bank_name, $bank_account, $hire_date, $per_id]);
 
-    // Execute the statement with the values in the correct order
-    $add_personnel->execute(array(
-        $per_name, $per_address, $pos_id, $per_designation, $per_date_of_birth,
-        $per_gender, $per_contact, $dept_id, $hire_date, $bank_name, $bank_account, $per_id
-    ));
-
+    header("Location: all_personnel.php");
 }
-
 ?>

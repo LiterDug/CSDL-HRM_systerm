@@ -40,7 +40,7 @@ include("header.php");
                                     foreach($fetch as $key => $row) { 
 									$per_id = $row['per_id'];?>
                               <td class="hidden" name="mainId"><?php echo $row['per_id']; ?></td>
-                                        <td><?php echo $row['per_lastname']." ".$row['per_firstname']." ".$row['per_suffix']; ?></td>
+                                        <td><?php echo $row['per_lastname']." ".$row['per_name']." ".$row['per_suffix']; ?></td>
 										<td><?php echo $row['pos_name']." / ".$row['rank_name']; ?></td>
                                         <td><?php echo $row['per_designation']; ?></td>
 										<td>

@@ -103,7 +103,7 @@
 
                                   ?>
                                   <td class="hidden"><?php echo $row['per_id']; ?></td>
-                                  <td><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_middlename']; ?></td>
+                                  <td><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_middlename']; ?></td>
                                   <td values="<?php echo $row['gass_id'].''.$row['rank_id'];?>"><?php echo $row['gass_name']." ".$row['gass_name']; ?></td>
                                   <td values="<?php echo $row['pos_id'];?>"><?php echo $row['pos_name']; ?></td>
                                   <td><?php echo $difference;?></td>

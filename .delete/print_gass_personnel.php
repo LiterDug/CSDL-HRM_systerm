@@ -102,7 +102,7 @@
                                   ?>
                                  
                                    <td class="hidden"><?php echo $row['per_id']; ?></td>
-                                  <td><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_middlename']; ?></td>
+                                  <td><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_middlename']; ?></td>
                                   <td values="<?php echo $row['pos_id']; ?>"><?php echo $row['pos_name']; ?></td>
                                   <td><?php echo $row['bs_name']; ?></td>
                                   <td><?php echo $row['ms_name']; ?></td>
@@ -148,7 +148,7 @@
                                                
                                   ?>
                                    <td class="hidden"><?php echo $row['per_id']; ?></td>
-                                  <td><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_middlename']; ?></td>
+                                  <td><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_middlename']; ?></td>
                                   <td values="<?php echo $row['pos_id']; ?>"><?php echo $row['pos_name']; ?></td>
                                   <td><?php echo $row['bs_name']; ?></td>
                                   <td><?php echo $row['ms_name']; ?></td>

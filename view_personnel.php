@@ -27,7 +27,7 @@
 
             <div class="head">
                 <img src = "<?php echo $row['per_image']; ?>">
-                <LABEL class = "name"><u><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_suffix'];?></u></LABEL>
+                <LABEL class = "name"><u><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_suffix'];?></u></LABEL>
                 <span class = "name1"><i>name</i></span>
                 <label class = "plantilla"><u><?php echo $row['per_plantilla_no']; ?></u></label>
                 <span class = "plantilla1"><i>Plantilla Number</i></span>

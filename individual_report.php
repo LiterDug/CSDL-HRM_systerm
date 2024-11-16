@@ -42,7 +42,7 @@ include("header.php");
                                         $difference = $date->diff($now)->format('%y');
                                   ?>
                                    <td class="hidden"><?php echo $row['per_id']; ?></td>
-                                  <td><?php echo $row['per_lastname'].", ".$row['per_firstname']." ".$row['per_middlename']; ?></td>
+                                  <td><?php echo $row['per_lastname'].", ".$row['per_name']." ".$row['per_middlename']; ?></td>
                                   <td><?php echo $row['per_gender']; ?></td>
                                   <td><?php echo $row['per_status']; ?></td>
                                   <td><?php echo $difference;?></td>
