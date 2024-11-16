@@ -194,22 +194,21 @@
                                                 </select>                   
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-4">
+                                    <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                Employee Status:
+                                                Designation:
                                             </span>
                                                 <select class="form-control show-tick main" id = "privileges" name="per_designation">
                                                     <option></option>
                                                     <option value='Permanent'>Permanent</option>
-                                                    <option value='GASS'>GASS</option>
+                                                    <option value='Full-time'>Full time</option>
                                                     <option value='Part-Time'>Part Time</option>
-                                                    <option value='Job-Order'>Job Order</option>
                                                 </select>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     
-                                    <div class="col-md-4">
+                                    <!-- <div class="col-md-4">
                                         <div class="input-group">
                                             <span class="input-group-addon">
                                                 Campus:
@@ -222,7 +221,7 @@
                                                     <option>Binalbagan</option>
                                                 </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- <div class="col-md-5">
                                         <div class="input-group">
                                             <span class="input-group-addon">
@@ -275,26 +274,6 @@
                                                 </div>
                                         </div>
                                     </div> -->
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Working time per month:
-                                            </span>
-                                                <div class="form-line">
-                                                    <input type="text" class="form-control key" name="per_gsis_bp_no" id="gsis" placeholder="Ex: XXX-XXX-XXX">
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                Salary:
-                                            </span>
-                                                <div class="form-line">
-                                                    <input type="text" class="form-control" name="per_pagibig_no" id="pagibig" maxlength="22" placeholder="e.g. XXX-XXX-XXX">
-                                                </div>
-                                        </div>
-                                    </div>
                                     <!-- <div class="col-md-12">
                                         <h3 class="page-header">Educational Attainment</h3> 
                                     </div>                

@@ -125,9 +125,9 @@
                             <!-- <li>
                                 <a href="gass_rank_table.php">GASS Position</a>
                             </li> -->
-                            <li>
+                            <!-- <li>
                                 <a href="rank_table.php">Academic Rank</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="department_table.php">Department</a>
                             </li>
